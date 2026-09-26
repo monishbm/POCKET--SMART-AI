@@ -1,94 +1,81 @@
-# PocketSmart AI — Complete Project
+# 🚀 Project Details
 
-A full working FastAPI + Jinja2 implementation of the supplied PocketSmart AI report.
+## 📌 Team Information
 
-## Included
+| Details | Information |
+|---|---|
+| **Team ID** | SWTID-2026-2087 |
+| **Team Size** | 5 |
+| **Team Leader** | MONISH B |
+| **Team Member** | JAGADEESHWARAN S |
+| **Team Member** | Shannon Cedric Jacob |
+| **Team Member** | Preethika B |
+| **Team Member** | Naresh S |
 
-- JWT authentication using HttpOnly cookies and `/token`
-- SQLite persistence for users, sessions, and recommendation history
-- 30-minute idle session cleanup
-- Home, Party, and Jewelry planners
-- Optional outfit image for Jewelry Planner
-- Gemini integration using the current `google-genai` SDK
-- Demo fallback mode if no API key is configured
-- Platform search links
-- Swagger `/docs` and ReDoc `/redoc`
-- Automated pytest tests
+---
 
-## VS Code setup — Windows
+## 👥 Team Members
 
-Open this folder in VS Code, then open **Terminal > New Terminal**.
+### 👑 Team Leader
+- **MONISH B**
 
-```powershell
-py -m venv .venv
-.venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-pip install -r requirements.txt
-Copy-Item .env.example .env
-```
+### 👨‍💻 Team Members
+- **JAGADEESHWARAN S**
+- **Shannon Cedric Jacob**
+- **Preethika B**
+- **Naresh S**
 
-Edit `.env`:
+---
 
-```env
-GOOGLE_API_KEY=your_google_ai_studio_key
-GEMINI_MODEL=gemini-2.5-flash
-SECRET_KEY=replace_this_with_a_long_random_secret
-```
+## 📂 Project Phase
 
-`GOOGLE_API_KEY` is optional. Without it, all pages still work in deterministic demo mode.
+This project is developed and submitted phase-wise as part of the **8-Phase Project Development Process**.
 
-Generate a secret:
+### 📋 8 Project Phases
 
-```powershell
-python -c "import secrets; print(secrets.token_urlsafe(48))"
-```
+1. **Brainstorming & Ideation**
+2. **Problem Statement**
+3. **Market Research & Analysis**
+4. **Requirement Analysis**
+5. **Project Design & Architecture**
+6. **Development & Implementation**
+7. **Testing & Validation**
+8. **Final Project Report**
 
-Run:
+---
 
-```powershell
-uvicorn app:app --reload
-```
+## 💻 Project Development
 
-Open:
+The project source code, documentation, and related project resources are maintained in this GitHub repository.
 
-- http://127.0.0.1:8000
-- http://127.0.0.1:8000/docs
-- http://127.0.0.1:8000/redoc
+### 🛠️ Technologies Used
 
-If PowerShell blocks activation, use a Command Prompt terminal:
+- HTML
+- CSS
+- JavaScript
+- GitHub
+- Generative AI Technologies
 
-```bat
-.venv\Scripts\activate.bat
-```
+---
 
-## macOS / Linux
+## 🎯 Project Objective
 
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-cp .env.example .env
-uvicorn app:app --reload
-```
+The main objective of this project is to develop a practical, user-friendly and innovative solution using modern technologies and Generative AI concepts.
 
-## Test
+---
 
-```bash
-pytest
-```
+## 📁 Repository Structure
 
-Manual test flow:
-
-1. Register
-2. Login
-3. Generate Home plan
-4. Generate Party plan
-5. Generate Jewelry plan without an image
-6. Generate Jewelry plan with JPG/PNG/WebP
-7. Open History
-8. Check `/docs`
-
-## Important
-
-The app generates estimated recommendations and search links; it does not claim real-time marketplace prices.
-For production: use HTTPS, set cookie `secure=True`, add rate limiting, and use a managed database.
+```text
+📦 Project Repository
+ ┣ 📂 Phase-1-Brainstorming
+ ┣ 📂 Phase-2-Problem-Statement
+ ┣ 📂 Phase-3-Market-Research
+ ┣ 📂 Phase-4-Requirement-Analysis
+ ┣ 📂 Phase-5-Design-Architecture
+ ┣ 📂 Phase-6-Development
+ ┣ 📂 Phase-7-Testing
+ ┣ 📂 Phase-8-Final-Report
+ ┣ 📂 src
+ ┣ 📂 assets
+ ┗ 📜 README.md
